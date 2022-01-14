@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-carousel img {
+    height: 400px;
+}
+
+nav {
+    height: 100px;
+    background-color: #392AF6;
+}
+
+.login {
+    height: 491px;
+}
+
+.reg {
+    height: 475px;
+}
+
+.result {
+    min-height: 491px;
+}
+
+.searchresult {
+    height: 500px;
+}

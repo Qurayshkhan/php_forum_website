@@ -18,15 +18,19 @@ include "header.php";
         $db_pass=$pickEmail['password'];
       $_SESSION['name']=$pickEmail['name'];
       $_SESSION['id']=$pickEmail['id'];
+      $usertype=$pickEmail['user_type'];
         $password_decode=password_verify($password,$db_pass);
-        if ($password_decode) {
+        if ($password_decode && $usertype==0) {
             ?>
             <script>
                 alert('login Successfully');
                 location.replace('home.php');
             </script>
             <?php
-        }else{
+        }elseif($password_decode && $usertype==1){
+          header("location:admin.php");
+        }
+        else{
             $wrong=true;
            
         }

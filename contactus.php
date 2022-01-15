@@ -6,7 +6,7 @@ include "header.php";
 ?>
 
 
-?>
+
 
 <section class="main_heading my-5 pt-5">
         <div class="text-center">

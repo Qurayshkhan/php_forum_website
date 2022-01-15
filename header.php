@@ -115,3 +115,5 @@ echo '  <a class="dropdown-item" href="threadslist.php?id='.$cat['id'].'">'.$cat
 
         </div>
     </nav>
+
+    

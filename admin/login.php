@@ -20,11 +20,11 @@ include "header.php";
       $_SESSION['name']=$pickEmail['name'];
       $_SESSION['id']=$pickEmail['id'];
         $password_decode=password_verify($password,$db_pass);
-        if ($password_decode) {
+        if ($password_decode && $usertype=="admin") {
             ?>
             <script>
                 alert('login Successfully');
-                location.replace('home.php');
+                location.replace('admin.php');
             </script>
             <?php
         }
